@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/elliotttf/semantic-release-conventional-commits.svg?branch=master)](https://travis-ci.org/elliotttf/semantic-release-conventional-commits)
 [![Coverage Status](https://coveralls.io/repos/github/elliotttf/semantic-release-conventional-commits/badge.svg?branch=master)](https://coveralls.io/github/elliotttf/semantic-release-conventional-commits?branch=master)
 
-
-This is a [semantic-release](https://www.npmjs.com/package/semantic-release)
-`analyzeCommits` plugin used to detect _all_ of the [conventional](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit)
+This is an `analyzeCommits` plugin for [semantic-release](https://www.npmjs.com/package/semantic-release).
+`semantic-release-conventional-commits` can be used to detect _all_ of the
+[conventional](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit)
 commit message styles.
 
 The commit analyzer that ships with semantic-release only catches `fix` and
