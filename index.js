@@ -16,7 +16,7 @@ module.exports = (config, { commits }, cb) => {
     mergePattern,
     mergeCorrespondence,
   };
-  commits.map(commit => parser(commit, parserOptions))
+  commits.map(commit => parser(`${commit.hash}\n${commit.message}`, parserOptions))
     .filter(commit => commit)
     .every((commit) => {
       // TODO - handle squash merge commits with lots of sub-commits.
