@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-conventional-commits",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Semantic release commit analyzer support for all of the conventional commit message types.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "test": "istanbul cover --print both nodeunit test/index.js",
     "precommit": "npm run lint",
     "prepush": "npm test",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "semantic-release",
@@ -34,6 +35,14 @@
     "husky": "^0.13.1",
     "istanbul": "^0.4.5",
     "nodeunit": "^0.11.0",
-    "validate-commit-msg": "^2.11.1"
+    "validate-commit-msg": "^2.11.1",
+    "semantic-release": "^6.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elliotttf/semantic-release-conventional-commits.git"
+  },
+  "release": {
+    "analyzeCommits": "./index.js"
   }
 }
