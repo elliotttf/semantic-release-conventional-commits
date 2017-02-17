@@ -38,11 +38,11 @@ You can also configure additional behavior in package.json as follows:
 ```json
 "release": {
   "analyzeCommits": {
-    "path": "semantic-release-conventional-commits"
+    "path": "semantic-release-conventional-commits",
     "majorTypes": ["major", "breaking"],
     "minorTypes": ["feat", "minor"],
     "patchTypes": ["fix", "patch"],
-    "mergePattern": "/^Merge pull request #(\d+) from (.*)$/",
+    "mergePattern": "/^Merge pull request #(\\d+) from (.*)$/",
     "mergeCorrespondence": "['id', 'source']"
   }
 }
