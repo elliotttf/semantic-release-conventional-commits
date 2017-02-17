@@ -1,5 +1,8 @@
 # Semantic Release Conventional Commits
 
+[![Build Status](https://travis-ci.org/elliotttf/semantic-release-conventional-commits.svg?branch=master)](https://travis-ci.org/elliotttf/semantic-release-conventional-commits)
+[![Coverage Status](https://coveralls.io/repos/github/elliotttf/semantic-release-conventional-commits/badge.svg?branch=master)](https://coveralls.io/github/elliotttf/semantic-release-conventional-commits?branch=master)
+
 This is a [semantic-release](https://www.npmjs.com/package/semantic-release)
 plugin used to detect _all_ of the [conventional](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit) commit message styles.
 
@@ -35,11 +38,11 @@ You can also configure additional behavior in package.json as follows:
 ```json
 "release": {
   "analyzeCommits": {
-    "path": "semantic-release-conventional-commits"
+    "path": "semantic-release-conventional-commits",
     "majorTypes": ["major", "breaking"],
     "minorTypes": ["feat", "minor"],
     "patchTypes": ["fix", "patch"],
-    "mergePattern": "/^Merge pull request #(\d+) from (.*)$/",
+    "mergePattern": "/^Merge pull request #(\\d+) from (.*)$/",
     "mergeCorrespondence": "['id', 'source']"
   }
 }
