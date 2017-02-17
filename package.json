@@ -1,7 +1,7 @@
 {
   "name": "semantic-release-conventional-commits",
   "version": "1.0.0",
-  "description": "Commit analyzer support for all of the conventional commit message types.",
+  "description": "Semantic release commit analyzer support for all of the conventional commit message types.",
   "main": "index.js",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | coveralls",
