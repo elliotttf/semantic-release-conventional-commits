@@ -32,7 +32,7 @@
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "husky": "^0.13.1",
+    "husky": "^0.13.3",
     "istanbul": "^0.4.5",
     "nodeunit": "^0.11.0",
     "validate-commit-msg": "^2.11.1",
