@@ -1,5 +1,7 @@
 # Semantic Release Conventional Commits
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/elliotttf/semantic-release-conventional-commits.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/elliotttf/semantic-release-conventional-commits.svg?branch=master)](https://travis-ci.org/elliotttf/semantic-release-conventional-commits)
 [![Coverage Status](https://coveralls.io/repos/github/elliotttf/semantic-release-conventional-commits/badge.svg?branch=master)](https://coveralls.io/github/elliotttf/semantic-release-conventional-commits?branch=master)
 
