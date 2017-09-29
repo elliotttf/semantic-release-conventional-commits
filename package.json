@@ -28,7 +28,7 @@
     "node": ">=6"
   },
   "devDependencies": {
-    "coveralls": "^2.11.16",
+    "coveralls": "^3.0.0",
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
