@@ -36,7 +36,7 @@
     "istanbul": "^0.4.5",
     "nodeunit": "^0.11.0",
     "validate-commit-msg": "^2.11.1",
-    "semantic-release": "^7.0.1"
+    "semantic-release": "^11.0.2"
   },
   "repository": {
     "type": "git",
