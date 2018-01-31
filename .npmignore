@@ -1,6 +1,7 @@
 coverage
-test
+test/**/*.js
 .coveralls.yml
 .travis.yml
 .eslintignore
 .eslintrc.json
+yarn.lock
