@@ -24,7 +24,7 @@ To use this plugin, add the following to `package.json`:
 ## Configuration
 
 By default, the behavior of this analyzer is very similar to the analyzer that
-ships with semantic-release. In addition to `fix`, `feat` and `BREAKING CHANGE`
+ships with semantic-release. In addition to `fix`, `feat` and `BREAKING CHANGE:`
 support, the following messages create the corresponding releases:
 
 * minor
@@ -60,4 +60,3 @@ The `mergePattern` and `mergeCorrespondence` allow you to detect a merge commit
 and use the first line of the body as the header to determine the release type.
 
 Note: configuring the type behavior will override the default type detection behavior.
-
