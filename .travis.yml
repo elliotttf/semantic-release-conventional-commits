@@ -5,16 +5,13 @@ cache:
 notifications:
   email: false
 node_js:
-  - '7'
-  - '6'
-before_script:
-  - npm prune
+  - '8'
 script:
-  - npm run lint
-  - npm test
+  - yarn lint
+  - yarn test
 after_success:
-  - npm run coveralls
-  - npm run semantic-release
+  - yarn coveralls
+  - yarn semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
