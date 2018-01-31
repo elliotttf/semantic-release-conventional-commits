@@ -2,7 +2,17 @@
 
 const parser = require('conventional-commits-parser').sync;
 
-module.exports = (config, { commits }, cb) => {
+/**
+ * Determine the type of release to create based on a list of commits.
+ *
+ * @param {Object} [config={}] semantic-release configuration
+ * @param {Object} options semantic-release options
+ * @param {Array} options.commits array of commits
+ *
+ * @return {Promise}
+ *   The release type to use.
+ */
+async function conventionalCommitsAnalyzer(config, { commits }) {
   let type = null;
   const {
     majorTypes = [],
@@ -40,6 +50,7 @@ module.exports = (config, { commits }, cb) => {
       return true;
     });
 
-  cb(null, type);
-};
+  return type;
+}
 
+module.exports = conventionalCommitsAnalyzer;
