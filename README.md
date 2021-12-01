@@ -16,7 +16,7 @@ The commit analyzer that ships with semantic-release only catches `fix` and
 To use this plugin, add the following to `package.json`:
 
 ```json
-"release: {
+"release": {
   "analyzeCommits": "semantic-release-conventional-commits"
 }
 ```
