@@ -4,20 +4,29 @@ const analyzer = require('../');
 
 module.exports = {
   noConfig: {
-    major(test) {
-      test.expect(1);
-      analyzer(
+    async major(test) {
+      test.expect(2);
+      const type = await analyzer(
         {},
         {
           commits: [{
             hash: '',
             message: 'feat(thing): Added the thing\nBREAKING CHANGE: api change',
           }],
-        })
-        .then((type) => {
-          test.equal(type, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
-          test.done();
-        });
+      });
+      test.equal(type, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
+      
+      const type2 = await analyzer(
+        {},
+        {
+          commits: [{
+            hash: '',
+            message: 'feat(thing)!: Added the thing',
+          }],
+      });
+      test.equal(type, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
+        
+      test.done();
     },
     minor(test) {
       test.expect(1);
