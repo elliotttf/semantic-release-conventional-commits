@@ -33,6 +33,7 @@ async function conventionalCommitsAnalyzer(config, { commits }) {
 
       if (
         majorTypes.indexOf(commit.type) !== -1 ||
+        commit.header.match(/^[^!:]+!:/) ||
         commit.notes.find(note => note.title.toUpperCase().match(/BREAKING CHANGE/))
       ) {
         type = 'major';

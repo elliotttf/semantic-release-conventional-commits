@@ -13,9 +13,9 @@ module.exports = {
             hash: '',
             message: 'feat(thing): Added the thing\nBREAKING CHANGE: api change',
           }],
-      });
+        });
       test.equal(type, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
-      
+
       const type2 = await analyzer(
         {},
         {
@@ -23,9 +23,9 @@ module.exports = {
             hash: '',
             message: 'feat(thing)!: Added the thing',
           }],
-      });
-      test.equal(type, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
-        
+        });
+      test.equal(type2, 'major', 'Unexpected type for `BREAKING CHANGE:`.');
+
       test.done();
     },
     minor(test) {
