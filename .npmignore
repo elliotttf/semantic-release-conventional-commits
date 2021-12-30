@@ -1,5 +1,6 @@
 coverage
-test/**/*.js
+test/
+.github/
 .coveralls.yml
 .travis.yml
 .eslintignore
